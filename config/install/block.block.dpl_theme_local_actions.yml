@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - islandora_starter_theme
-id: islandora_starter_theme_local_actions
-theme: islandora_starter_theme
+    - dpl_theme
+id: dpl_theme_local_actions
+theme: dpl_theme
 region: content
 weight: -5
 provider: null

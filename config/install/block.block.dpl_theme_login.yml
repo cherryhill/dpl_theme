@@ -4,9 +4,9 @@ dependencies:
   module:
     - user
   theme:
-    - islandora_starter_theme
-id: islandora_starter_theme_login
-theme: islandora_starter_theme
+    - dpl_theme
+id: dpl_theme_login
+theme: dpl_theme
 region: footer_third
 weight: -9
 provider: null

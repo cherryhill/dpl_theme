@@ -6,9 +6,9 @@ dependencies:
   module:
     - fixed_block_content
   theme:
-    - islandora_starter_theme
-id: islandora_starter_theme_footercontact
-theme: islandora_starter_theme
+    - dpl_theme
+id: dpl_theme_footercontact
+theme: dpl_theme
 region: footer_first
 weight: -7
 provider: null

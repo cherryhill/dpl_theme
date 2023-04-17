@@ -3,24 +3,20 @@ status: true
 dependencies:
   module:
     - islandora_install_profile_demo_core
-    - block_class
     - context
     - islandora
     - system
   theme:
-    - islandora_starter_theme
-third_party_settings:
-  block_class:
-    classes: site__islandora_breadcrumbs
-id: islandora_starter_theme_breadcrumbs
-theme: islandora_starter_theme
-region: breadcrumb
-weight: -9
+    - dpl_theme
+id: dpl_theme_content
+theme: dpl_theme
+region: content
+weight: -4
 provider: null
-plugin: system_breadcrumb_block
+plugin: system_main_block
 settings:
-  id: system_breadcrumb_block
-  label: Breadcrumbs
+  id: system_main_block
+  label: 'Main page content'
   provider: system
   label_display: '0'
 visibility:

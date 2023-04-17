@@ -7,9 +7,9 @@ dependencies:
     - islandora
     - system
   theme:
-    - islandora_starter_theme
-id: islandora_starter_theme_sitebranding
-theme: islandora_starter_theme
+    - dpl_theme
+id: dpl_theme_sitebranding
+theme: dpl_theme
 region: footer_first
 weight: -9
 provider: null

@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - islandora_starter_theme
-id: islandora_starter_theme_messages
-theme: islandora_starter_theme
+    - dpl_theme
+id: dpl_theme_messages
+theme: dpl_theme
 region: highlighted
 weight: -7
 provider: null
