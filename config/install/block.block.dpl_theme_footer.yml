@@ -1,24 +1,40 @@
+uuid: 27b4e621-9075-4ba5-bf0f-b2751af73cc3
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.footer
   module:
+    - islandora
+    - islandora_install_profile_demo_core
     - system
   theme:
     - dpl_theme
-id: dpl_theme_footer
+id: footer
 theme: dpl_theme
-region: footer_second
-weight: -9
+region: footer_disclaimer
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
-  provider: system
+  label: Footer
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''
+  node_has_implicit_parent:
+    id: node_has_implicit_parent
+    negate: false
+    context_mapping: {  }
+    model_uri: null
+    parent_reference_field: field_member_of
+    uri: null
+    logic: and

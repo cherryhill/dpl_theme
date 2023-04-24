@@ -33,12 +33,30 @@ $xxxx-small : $base-font-size * 0.3125;
 // =============================================================================
 
 
+// Sitewide variables
+//width
+$site-width-full: 100%;
+
+//height
+$site-height-100vh: 100vh;
+
+//background
+$site-bg-cover: cover;
+$site-bg-repeat: no-repeat;
+$site-bg-position-center: center;
+$site-bg-position-top: top;
+$site-bg-position-bottom: bottom;
+$site-bg-position-left: left;
+
+
 // Global padding
 // Matches the global padding set in the layout (e.g. flex-builder). We use this
 // to ensure things like gutters are teh same everywhere, or use it recalculate
 // gutters, e.g. if we want to double it.
 $global-padding: 0.625rem;
 $global-padding-percent: 6%;
+
+$global-gutter-container: 1.875rem;
 
 
 // Lighten and Darken
@@ -62,9 +80,9 @@ $base-color               : #000000;
 
 // Text colors
 // -----------------------------------------------------------------------------
-$text-color               : #1a2747;
+$text-color               : #000000;
 $text-color-light         : #dbf5ea;
-$text-color-medium        : #0c7040;
+$text-color-medium        : #8cc841;
 
 $text-background-color-light  : $text-color-light;
 $text-background-color-normal : #ffffff;
@@ -75,7 +93,7 @@ $site-name : $text-color-medium;
 
 // Link colors
 // -----------------------------------------------------------------------------
-$link-color               : $text-color-medium;
+$link-color               : $text-color;
 $link-alt-color           : #0e924f;
 $link-hover-color         : $link-alt-color;
 $link-active-color        : $link-alt-color;
@@ -143,6 +161,7 @@ $even-color : $text-background-color-normal;
 
 // Barrio colors
 $primary-shade: $text-color-medium;
+$primary-shade-hover: #9ee70c;
 $primary-light: lighten($primary-shade, 37%);
 $primary-dark: darken($primary-shade, 12%);
 $accent-shade: $text-color-light;
@@ -158,16 +177,22 @@ $cyan: #17a2b8;
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-800: #343a40;
-$theme-colors: ( primary: $accent-shade, secondary: $primary-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
-$brand-primary: $accent-shade;
+$dark: #333;
+$theme-colors: ( primary: $primary-shade, secondary: $accent-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
+$brand-primary: $primary-shade;
 
 
 // Body
 $body-bg: $white;
-$body-color: $gray-800;
+$body-color: $text-color;
 $inverse-bg: $primary-shade;
 $inverse-color: $white;
 
+// btn
+$btn-border-radius: 2rem;
+$btn-font-size: 1.4375rem;
+$btn-padding-x: 1rem;
+$btn-padding-y: .375rem;
 
 // =============================================================================
 //
@@ -200,7 +225,7 @@ $page-leaderboard-color                : #ffffff;
 $page-leaderboard-background-color     : $text-color-medium;
 
 // Header.
-$page-header-color                     : $text-color-medium;
+$page-header-color                     : $text-color;
 $page-header-background-color          : $text-color-light;
 
 // Navbar.
@@ -237,8 +262,8 @@ $page-footer-color                     : $text-color-medium;
 $page-footer-background-color          : $text-color-light;
 
 // Footer (+ footer cols)
-$page-footer-disclaimer-color          : $text-color;
-$page-footer-disclaimer-background-color : $border-color-alt;
+$page-footer-disclaimer-color          : $white;
+$page-footer-disclaimer-background-color : $dark;
 
 
 // Branding
@@ -303,7 +328,8 @@ $resp-menu-active-background-color : $page-navbar-color;
 $resp-menu-z-index                 : 480;
 $resp-menu-arrows                  : true;
 
-$navbar-nav-link-padding-x         : $large;
+$navbar-nav-link-padding-x         : 1rem;
+$navbar-nav-link-size              : 1.625rem;
 
 // Drop Menu
 $dropmenu-item-width               : 12em;

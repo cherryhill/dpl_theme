@@ -1,0 +1,61 @@
+.featured-collections {
+  position: relative;
+  margin-top: 0;
+
+  &:before {
+    content: "";
+    background: $text-color;
+    width: calc(100% + 60px);
+    height: 100%;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    bottom: 0;
+    right: -30px;
+  }
+
+  .node {
+    background: none;
+  }
+
+  .view-list {
+    .views-row {
+      .node__content {
+        .field__item {
+          flex-shrink: initial;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .node__content {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-family: $font-family-book;
+      font-size: $h5-font-size;
+      color: $white;
+      font-weight: normal;
+    }
+
+    .field__item {
+      flex-shrink: initial;
+    }
+  }
+
+  .search-results__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 4rem;
+  }
+
+  .horizontal-tabs {
+    display: none;
+  }
+
+  .view-home-page-featured-collections {
+    position: relative;
+  }
+}

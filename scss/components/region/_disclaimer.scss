@@ -1,0 +1,36 @@
+.site-disclaimer {
+  color: $page-footer-disclaimer-color;
+  background-color: $page-footer-disclaimer-background-color;
+  font-size: $base-font-size;
+
+  .region-footer-disclaimer {
+    justify-content: space-between;
+  }
+
+  .field--name-body {
+    margin-bottom: 0;
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      .nav-link {
+        color: $white;
+        font-weight: normal;
+        font-size: $base-font-size;
+        font-family: $font-family-base;
+      }
+    }
+  }
+}

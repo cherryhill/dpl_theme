@@ -1,0 +1,40 @@
+.block.block-views-exposed-filter-blocksolr-search-content-page-1 {
+  .page__row--has-bg &{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: fit-content;
+    padding: 2.5rem;
+    background: transparentize($dark, 0.3);
+    max-width: fit-content;
+  }
+
+
+  h2 {
+    color: $white;
+    font-size: 2.9375rem;
+  }
+
+  .row {
+    margin: 0;
+    gap: 1.375rem;
+    align-items: flex-start;
+  }
+
+  .js-form-type-textfield {
+    flex: 1;
+  }
+
+  .form-actions {
+    .form-submit {
+        border-radius: 2rem;
+    }
+  }
+
+  .form-control {
+    min-height: 3.6875rem;
+  }
+}
+

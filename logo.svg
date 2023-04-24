@@ -1,26 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105.07" height="104.507" viewBox="0 0 105.07 104.507">
-  <defs>
-    <filter id="Rectangle_4629" x="0" y="0" width="105.07" height="104.507" filterUnits="userSpaceOnUse">
-      <feOffset dy="1" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="1" result="blur"/>
-      <feFlood flood-opacity="0.604"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="Group_12739" data-name="Group 12739" transform="translate(-79 -683.747)">
-    <g transform="matrix(1, 0, 0, 1, 79, 683.75)" filter="url(#Rectangle_4629)">
-      <g id="Rectangle_4629-2" data-name="Rectangle 4629" transform="translate(3 2)" fill="#fff" stroke="#f0edf2" stroke-width="1">
-        <rect width="99.07" height="98.507" rx="15" stroke="none"/>
-        <rect x="0.5" y="0.5" width="98.07" height="97.507" rx="14.5" fill="none"/>
-      </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 352.36 254" aria-labelledby="dpl-logo-header" aria-hidden="true">
+    <title id="dpl-logo-header">Detroit Public Library</title>
+    <defs>
+        <clipPath id="clip-path-header" transform="translate(0)">
+            <rect class="dpl-logo-cls-1" x="40.92" y="213.09" width="135.29" height="40.91"></rect>
+        </clipPath>
+        <clipPath id="clip-path-2-header" transform="translate(0)">
+            <polygon class="dpl-logo-cls-1" points="40.92 213.09 40.92 254 135.29 254 176.21 213.09 40.92 213.09"></polygon>
+        </clipPath>
+        <linearGradient id="linear-gradient-header" x1="-52.84" y1="-28.31" x2="-51.71" y2="-28.31" gradientTransform="matrix(120.07, 0, 0, -120.07, 6385.16, -3166)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#bcbec0"></stop>
+            <stop offset="0.23" stop-color="#cfd0d1"></stop>
+            <stop offset="0.73" stop-color="#f2f2f2"></stop>
+            <stop offset="1" stop-color="#fff"></stop>
+        </linearGradient>
+    </defs>
+    <g class="dpl-logo-cls-2">
+        <g id="Layer_1-header" data-name="Layer 1">
+            <g id="logo_hex_rev-header">
+                <polygon fill="#8dc742" class="dpl-logo-cls-3" points="0.01 0 0.01 213.08 0.01 213.09 0 213.09 40.92 254 135.29 254 176.21 213.09 40.92 213.09 40.92 0 0.01 0"></polygon>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M70.94,29.91H84.4c10.84,0,18.34,7.44,18.34,17.16v.1c0,9.71-7.49,17.25-18.34,17.25H70.94ZM84.4,57.56c6.21,0,10.4-4.19,10.4-10.3v-.1c0-6.11-4.19-10.4-10.4-10.4H78.53v20.8Z" transform="translate(0)"></path>
+                <polygon class="dpl-logo-cls-4" fill="#fff"  points="117.72 29.91 143.74 29.91 143.74 36.66 125.26 36.66 125.26 43.66 141.52 43.66 141.52 50.41 125.26 50.41 125.26 57.66 143.99 57.66 143.99 64.41 117.72 64.41 117.72 29.91"></polygon>
+                <polygon class="dpl-logo-cls-4" fill="#fff"  points="170.26 36.91 159.76 36.91 159.76 29.91 188.35 29.91 188.35 36.91 177.85 36.91 177.85 64.41 170.26 64.41 170.26 36.91"></polygon>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M204.56,29.91h15.77c4.39,0,7.79,1.23,10.06,3.5a10.84,10.84,0,0,1,3,7.89v.1a10.72,10.72,0,0,1-7.4,10.7l8.44,12.32h-8.88l-7.39-11h-6v11h-7.59Zm15.28,16.76c3.7,0,5.82-2,5.82-4.88v-.1c0-3.25-2.27-4.93-6-4.93h-7.54v9.91Z" transform="translate(0)"></path>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M247.3,47.25v-.1c0-9.81,7.74-17.84,18.39-17.84S284,37.25,284,47.06v.1C284,57,276.23,65,265.59,65S247.3,57.07,247.3,47.25m28.74,0v-.1c0-5.91-4.34-10.84-10.45-10.84s-10.35,4.83-10.35,10.74v.1c0,5.92,4.34,10.84,10.45,10.84S276,53.17,276,47.25" transform="translate(0)"></path>
+                <rect class="dpl-logo-cls-4" fill="#fff"  x="298.51" y="29.91" width="7.59" height="34.51"></rect>
+                <polygon class="dpl-logo-cls-4" fill="#fff"  points="332.27 36.91 321.78 36.91 321.78 29.91 350.36 29.91 350.36 36.91 339.87 36.91 339.87 64.41 332.27 64.41 332.27 36.91"></polygon>
+                <polygon class="dpl-logo-cls-4" fill="#fff"  points="70.94 148.2 78.53 148.2 78.53 175.81 95.73 175.81 95.73 182.71 70.94 182.71 70.94 148.2"></polygon>
+                <rect class="dpl-logo-cls-4" fill="#fff"  x="113.03" y="148.2" width="7.59" height="34.51"></rect>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M138.12,148.2h16c3.94,0,7,1.09,9,3.05a7.92,7.92,0,0,1,2.37,5.87v.1a8,8,0,0,1-4.53,7.45c4,1.53,6.46,3.84,6.46,8.48v.1c0,6.31-5.13,9.46-12.92,9.46H138.12Zm14.4,13.95c3.35,0,5.47-1.08,5.47-3.65v-.1c0-2.26-1.78-3.55-5-3.55h-7.49v7.29Zm2,13.9c3.35,0,5.37-1.18,5.37-3.75v-.1c0-2.32-1.72-3.75-5.62-3.75h-8.77v7.59Z" transform="translate(0)"></path>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M183,148.2h15.78c4.39,0,7.79,1.23,10.05,3.5a10.84,10.84,0,0,1,3,7.89v.1a10.72,10.72,0,0,1-7.39,10.7l8.43,12.32h-8.87l-7.39-11h-6v11H183ZM198.26,165c3.7,0,5.81-2,5.81-4.88V160c0-3.25-2.26-4.93-6-4.93h-7.54V165Z" transform="translate(0)"></path>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M240.2,148h7L262,182.71H254L250.89,175H236.31l-3.16,7.74h-7.74Zm8,20.31-4.58-11.19L239,168.27Z" transform="translate(0)"></path>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M277.07,148.2h15.78c4.39,0,7.79,1.23,10.06,3.5a10.84,10.84,0,0,1,3,7.89v.1a10.71,10.71,0,0,1-7.39,10.7l8.43,12.32H298l-7.39-11h-6v11h-7.59ZM292.35,165c3.7,0,5.82-2,5.82-4.88V160c0-3.25-2.27-4.93-6-4.93h-7.54V165Z" transform="translate(0)"></path>
+                <polygon class="dpl-logo-cls-4" fill="#fff"  points="330.16 169.1 316.89 148.2 325.77 148.2 334 162.05 342.38 148.2 351 148.2 337.75 168.95 337.75 182.71 330.16 182.71 330.16 169.1"></polygon>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M71.92,89H84.48c7.61,0,12.85,3.91,12.85,10.58v.1c0,7.27-6.28,11-13.49,11H74.49v12.9H71.92ZM84,108.28c6.43,0,10.78-3.36,10.78-8.5v-.1c0-5.49-4.25-8.35-10.48-8.35H74.49v17Z" transform="translate(0)"></path>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M125.08,109.17V89h2.57v20c0,8.15,4.4,12.85,11.71,12.85,7,0,11.52-4.25,11.52-12.6V89h2.56v19.92c0,9.93-5.77,15.22-14.18,15.22s-14.18-5.24-14.18-14.93" transform="translate(0)"></path>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M183.86,89h14.29c3.9,0,7.07,1.14,9,3.07a7.48,7.48,0,0,1,2.22,5.44v.1c0,4.69-3.07,7.07-5.87,8.21,4.14,1.09,7.81,3.46,7.81,8.25v.1c0,5.78-4.94,9.44-12.41,9.44h-15Zm14,16c5.19,0,8.9-2.52,8.9-7.12v-.1c0-3.81-3.11-6.37-8.65-6.37H186.43v13.59ZM199,121.19c5.94,0,9.69-2.72,9.69-7.07V114c0-4.25-3.7-6.72-10.52-6.72H186.43v13.89Z" transform="translate(0)"></path>
+                <polygon class="dpl-logo-cls-4" fill="#fff"  points="240.23 88.96 242.8 88.96 242.8 121.19 263.12 121.19 263.12 123.56 240.23 123.56 240.23 88.96"></polygon>
+                <rect class="dpl-logo-cls-4" fill="#fff"  x="289.08" y="88.96" width="2.57" height="34.6"></rect>
+                <path class="dpl-logo-cls-4" fill="#fff"  d="M321.42,106.36v-.1c0-9.79,7.32-17.89,17.3-17.89,6.18,0,9.89,2.27,13.44,5.53l-1.83,1.88c-3-2.92-6.47-5.09-11.67-5.09-8.3,0-14.58,6.77-14.58,15.47v.1c0,8.75,6.38,15.57,14.63,15.57,5,0,8.4-1.93,11.91-5.38l1.73,1.68c-3.66,3.61-7.61,6-13.75,6-9.88,0-17.2-7.86-17.2-17.79" transform="translate(0)"></path>
+                <g class="dpl-logo-cls-5">
+                    <g clip-path="url(#clip-path-header)" class="dpl-logo-cls-6">
+                        <g clip-path="url(#clip-path-2-header)" class="dpl-logo-cls-7">
+                            <rect class="dpl-logo-cls-8" x="40.92" y="213.09" width="135.29" height="40.91"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
     </g>
-    <g id="Group_12044" data-name="Group 12044" transform="translate(100.326 711.514)">
-      <g id="Group_12740" data-name="Group 12740" transform="translate(-4 -4)">
-        <rect id="Rectangle_4631" data-name="Rectangle 4631" width="12.088" height="12.088" transform="translate(50.479 35.929)" fill="#44ca67"/>
-        <rect id="Rectangle_4632" data-name="Rectangle 4632" width="12.088" height="12.088" transform="translate(7.498 8.395)" fill="#44ca67"/>
-        <path id="Path_5120" data-name="Path 5120" d="M19.228-66.448H8.65a1.764,1.764,0,0,0-1.763,1.763v10.577A1.764,1.764,0,0,0,8.65-52.345H19.228a1.764,1.764,0,0,0,1.763-1.763V-64.685A1.764,1.764,0,0,0,19.228-66.448ZM17.465-55.871H10.413v-7.052h7.052ZM49.2-57.634v8.814h3.526v-8.814a5.291,5.291,0,0,0-5.289-5.289H31.568V-59.4H47.434A1.764,1.764,0,0,1,49.2-57.634Zm12.34,19.392H50.96A1.764,1.764,0,0,0,49.2-36.479V-25.9a1.764,1.764,0,0,0,1.763,1.763H61.537A1.764,1.764,0,0,0,63.3-25.9V-36.479A1.764,1.764,0,0,0,61.537-38.242ZM59.774-27.665H52.723v-7.052h7.052Zm5.289-17.629H47.434A5.291,5.291,0,0,0,42.145-40v17.629a5.291,5.291,0,0,0,5.289,5.289H65.063a5.291,5.291,0,0,0,5.289-5.289V-40A5.291,5.291,0,0,0,65.063-45.294Zm1.763,22.918a1.764,1.764,0,0,1-1.763,1.763H47.434a1.764,1.764,0,0,1-1.763-1.763V-40a1.764,1.764,0,0,1,1.763-1.763H65.063A1.764,1.764,0,0,1,66.826-40ZM20.991-32.953v-8.814H17.465v8.814a5.291,5.291,0,0,0,5.289,5.289H38.62V-31.19H22.754A1.764,1.764,0,0,1,20.991-32.953Zm7.052-17.629V-68.211A5.291,5.291,0,0,0,22.754-73.5H5.125A5.291,5.291,0,0,0-.164-68.211v17.629a5.291,5.291,0,0,0,5.289,5.289H22.754A5.291,5.291,0,0,0,28.042-50.582Zm-24.68,0V-68.211a1.764,1.764,0,0,1,1.763-1.763H22.754a1.764,1.764,0,0,1,1.763,1.763v17.629a1.764,1.764,0,0,1-1.763,1.763H5.125A1.764,1.764,0,0,1,3.362-50.582Z" transform="translate(0.164 73.5)" fill="#1a1a1a"/>
-      </g>
-    </g>
-  </g>
 </svg>

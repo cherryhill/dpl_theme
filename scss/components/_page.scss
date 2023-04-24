@@ -25,6 +25,17 @@
   }
 }
 
+div.container-fluid,
+.dpl-navbar {
+  padding-left: $global-padding;
+  padding-right: $global-padding;
+  align-items: flex-start;
+
+  @media #{$tablet} {
+    padding-left: $global-gutter-container;
+    padding-right: $global-gutter-container;
+  }
+}
 
 // Regions wrapper.
 .regions {
@@ -91,4 +102,13 @@
    @media #{$tablet} {
      padding: $global-padding 0;
    }
+}
+
+.path-frontpage {
+  .block-system-main-block {
+    margin: 0;
+  }
+  .node__title {
+    display: none;
+  }
 }
