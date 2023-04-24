@@ -26,3 +26,19 @@
     }
   }
 }
+
+// css for pagination option
+.pagination_option_item__link,
+.pagination .page-link {
+  border: 0;
+  color: $black;
+  font-weight: normal;
+  background: none;
+
+  &:hover,&:active, &:focus {
+    background: none;
+    box-shadow: none;
+    color: $black;
+  }
+}
+
