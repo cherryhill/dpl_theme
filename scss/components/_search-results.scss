@@ -30,8 +30,14 @@
 
 
 .view-grid .search-results__content {
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
   @media #{$tablet} {
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  }
+
+  @media #{$desktop} {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   }
 }
 

@@ -13,17 +13,25 @@
   .search-results__content {
     .image__wrapper {
       background: $light-gray-300;
-      min-height: 285px;
+      min-height: 220px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 10px;
 
+      @media #{$tablet} {
+        min-height: 285px
+      }
+
       img {
         box-shadow: none;
         border: 0 none;
         padding: 0;
-        max-width: fit-content;
+
+        @media #{$tablet} {
+          max-width: 100%;
+          width: auto;
+        }
       }
     }
   }
