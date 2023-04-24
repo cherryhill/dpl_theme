@@ -49,6 +49,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 4rem;
+
+    .image__wrapper {
+      background: none;
+      min-height: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+
+      img {
+        box-shadow: none;
+        border: 0 none;
+        padding: 0;
+        max-width: initial
+      }
+    }
   }
 
   .horizontal-tabs {

@@ -1,17 +1,20 @@
 .btn-primary {
-  background: $primary-shade;
-  color: $black;
-  border: 0 none transparent;
   min-width: 13.75rem;
+  @include button-variant($button-variant-color: $black, $button-variant-background-color: $primary-shade, $has-borders: false, $button-variant-background-color-hover: $primary-shade-hover);
 
-  &:hover, &:focus, &:active {
-    background: $primary-shade-hover;
-    border: 0 none transparent;
-    color: $black;
-  }
 }
 
-.button.btn {
+button.button.btn {
   border: 0 none;
   padding: 6px 1rem;
+  &.btn-primary {
+    &:not(:disabled) {
+      &:not(.disabled) {
+        &:active {
+          background-color: $primary-shade-hover;
+          color: $black;
+        }
+      }
+    }
+  }
 }

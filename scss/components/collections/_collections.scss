@@ -1,0 +1,30 @@
+.view-grid {
+  .node__details {
+    .node__title {
+      font-size: $base-font-size;
+      text-decoration: underline;
+
+      a {
+        border-bottom: 0 none;
+      }
+    }
+  }
+
+  .search-results__content {
+    .image__wrapper {
+      background: $light-gray-300;
+      min-height: 285px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+
+      img {
+        box-shadow: none;
+        border: 0 none;
+        padding: 0;
+        max-width: fit-content;
+      }
+    }
+  }
+}

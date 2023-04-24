@@ -2,9 +2,15 @@
   color: $page-footer-disclaimer-color;
   background-color: $page-footer-disclaimer-background-color;
   font-size: $base-font-size;
+  padding: 0 1rem;
 
   .region-footer-disclaimer {
     justify-content: space-between;
+    flex-direction: column;
+
+    @media #{$tablet} {
+      flex-direction: row;
+    }
   }
 
   .field--name-body {
@@ -30,6 +36,7 @@
         font-weight: normal;
         font-size: $base-font-size;
         font-family: $font-family-base;
+        text-decoration: underline;
       }
     }
   }

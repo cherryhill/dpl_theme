@@ -95,10 +95,10 @@ $site-name : $text-color-medium;
 // -----------------------------------------------------------------------------
 $link-color               : $text-color;
 $link-alt-color           : #0e924f;
-$link-hover-color         : $link-alt-color;
-$link-active-color        : $link-alt-color;
-$link-visited-color       : $link-alt-color;
-$link-visited-hover-color : $link-alt-color;
+$link-hover-color         : $text-color;
+$link-active-color        : $text-color;
+$link-visited-color       : $text-color;
+$link-visited-hover-color : $text-color;
 $link-alt-hover-color     : $link-alt-color;
 $link-alt-active-color    : $text-color;
 
@@ -177,6 +177,7 @@ $cyan: #17a2b8;
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-800: #343a40;
+$light-gray-300: #ececec;
 $dark: #333;
 $theme-colors: ( primary: $primary-shade, secondary: $accent-shade, success: $green, info: $cyan, warning: $yellow, danger: $red, light: $gray-100, dark: $gray-800);
 $brand-primary: $primary-shade;
@@ -330,7 +331,7 @@ $resp-menu-arrows                  : true;
 
 $navbar-nav-link-padding-x         : 1rem;
 $navbar-nav-link-size              : 1.625rem;
-
+$navbar-light-color                : $primary-shade;
 // Drop Menu
 $dropmenu-item-width               : 12em;
 $dropmenu-arrows                   : true;
@@ -651,10 +652,16 @@ $mobile-isolate : "all and (max-width: 45em)";
 $tablet-isolate : "all and (min-width: 45.063em) and (max-width: 60em)";
 $wide-isolate   : "all and (min-width: 60.063em) and (max-width: 120em)";
 // Min width only.
-$tablet         : "all and (min-width: 45.063em)";
+
 $wide           : "all and (min-width: 60.063em)";
 $huge           : "all and (min-width: 120.063em)";
+
+$desktop-xlarge : "all and (min-width: 90em)";
+$desktop-large  : "all and (min-width: 80em)";
+$desktop        : "all and (min-width: 62em)";
+$tablet         : "all and (min-width: 48em)";
 $mobile         : "all and (min-width: 60em)";
+$mobile-max     : "all and (max-width: 60em)";
 
 
 /*============================================================================ */
