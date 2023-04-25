@@ -93,6 +93,7 @@
 
           span {
             border-color: $black;
+            border-width: 1px;
 
             .path-not-front & {
               color: $black;
@@ -103,8 +104,15 @@
             }
           }
         }
-
-        span {}
+        &.active {
+          span {
+            .path-not-front & {
+              border-color: $white;
+              border-width: 1px;
+            }
+          }
+          
+        }
       }
     }
   }
