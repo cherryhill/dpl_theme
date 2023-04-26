@@ -2,3 +2,19 @@
  * @file
  * Styles for Bootstrap Barrio's breadcrumbs.
  */
+.breadcrumb {
+  li {
+    font-size: $base-font-size;
+  }
+
+  a {
+    color: $text-color;
+    &:hover, &:focus, &:active {
+      color: $text-color;
+    }
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: $text-color;
+  }
+}

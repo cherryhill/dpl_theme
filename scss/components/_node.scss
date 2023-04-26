@@ -2,3 +2,10 @@
  * @file
  * Visual styles for Bootstrap Barrio's node component.
  */
+.node__content {
+  font-size: $font-size-base;
+
+  h1 {
+    text-align: center;
+  }
+}

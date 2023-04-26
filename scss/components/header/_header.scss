@@ -1,0 +1,21 @@
+header.header {
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+
+  .path-frontpage & {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .path-not-front & {
+    background: $black;
+  }
+
+  .site-branding {
+    margin: 0;
+  }
+}
+
+
+

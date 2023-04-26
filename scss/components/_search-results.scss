@@ -1,12 +1,17 @@
 /**
  * Search results.
  ============================================================================ */
-
 .item-list--search-results {}
 
 .view-header, .view__collection-count {}
 
 .search-results {}
+
+.block-facet--links {
+  div.block__content {
+    background: $gray-100;
+  }
+}
 
 .facets-widget-links {}
 
@@ -25,7 +30,15 @@
 
 
 .view-grid .search-results__content {
-  @media #{$tablet} {}
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+  @media #{$tablet} {
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  }
+
+  @media #{$desktop} {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  }
 }
 
 // Homepage, Browse Content Teaser
@@ -36,4 +49,21 @@
 
 .path-browse-collections {
   .search-results__header .sort__container {}
+}
+
+.view-solr-search-content {
+  .view-header {
+    text-align: right;
+  }
+
+  .view-footer {
+    background: $gray-100;
+    padding: 1rem 2rem;
+
+    .facets-widget-links {
+      h3 {
+        background: $gray-100;
+      }
+    }
+  }
 }

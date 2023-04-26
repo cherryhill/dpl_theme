@@ -38,7 +38,6 @@ Description: Bootstrap 4 with Sass
 @import "./components/field";
 //@import "./components/file";
 @import "./components/form";
-@import "./components/header";
 @import "./components/help";
 @import "./components/icons";
 @import "./components/image";
@@ -70,3 +69,14 @@ Description: Bootstrap 4 with Sass
 //@import "./components/vertical-tabs.component";
 //@import "./components/vertical-tabs";
   @import "./components/views";
+
+@import "./components/logo";
+@import "./components/header/header-region";
+@import "./components/header/header";
+@import "./components/region/highlighted";
+@import "./components/blocks/expose-filter-block-solr-search";
+@import "./components/blocks/featured-collections";
+@import "./components/region/disclaimer";
+@import "./components/button/btn";
+@import "./components/collections/featured-collections";
+@import "./components/collections/collections";

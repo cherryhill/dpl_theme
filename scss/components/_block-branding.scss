@@ -5,6 +5,10 @@
 
 .block--system-branding-block {}
 
+.block.block-branding {
+  margin: 0;
+}
+
 .site-branding {
   // link around the logo image
   &__logo-link {}

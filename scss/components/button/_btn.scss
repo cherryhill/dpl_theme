@@ -1,0 +1,34 @@
+.btn-primary {
+  min-width: 13.75rem;
+  @include button-variant(
+    $button-variant-color: $black,
+    $button-variant-background-color: $primary-shade,
+    $has-borders: false,
+    $button-variant-background-color-hover: $primary-shade-hover
+  );
+}
+
+button.button {
+  border: 0 none;
+  font-weight: bold;
+  @include button-variant(
+    $button-variant-color: $black,
+    $button-variant-background-color: $primary-shade,
+    $has-borders: false,
+    $button-variant-background-color-hover: $primary-shade-hover
+  );
+  &.btn {
+    border: 0 none;
+    padding: 6px 1rem;
+    &.btn-primary {
+      &:not(:disabled) {
+        &:not(.disabled) {
+          &:active {
+            background-color: $primary-shade-hover;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,30 @@
   .navbar-toggler {
     margin: $global-padding;
     font-size: $h6-font-size;
+    color: $black;
+    z-index: 10;
+
+    &:hover, &:focus, &:active {
+      color: $black;
+      background: none;
+    }
+
+    .path-not-front & {
+      color: $white;
+
+      &[aria-expanded="true"] {
+        color: $black;
+      }
+
+      &:hover, &:focus, &:active {
+        color: $white;
+        background: none;
+
+        &[aria-expanded="true"] {
+          color: $black;
+        }
+      }
+    }
   }
 }
 
@@ -16,7 +40,12 @@
 
   .nav-link {
     padding: 0;
-    font-size: $h6-font-size;
+    font-family: $font-family-header;
+    font-size: $large;
+
+    @media #{$desktop-xlarge} {
+      font-size: $navbar-nav-link-size;
+    }
 
     &:hover,
     &:focus {
@@ -29,12 +58,62 @@
   &.block {}
 
   .navbar-nav {
-    .nav-link {
+    .nav-item {
+      @media #{$mobile-max} {
+        margin-bottom: $medium;
+      }
 
-      &:hover,
-      &:focus {}
+      .nav-link {
+        color: $black;
+        padding-top: 0;
 
-      span {}
+        @media #{$mobile-max} {
+          padding: 0;
+        }
+
+        .path-not-front & {
+          color: $black;
+
+          @media #{$desktop} {
+            color: $white;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          color: $black;
+
+        .path-not-front & {
+          color: $black;
+
+          @media #{$desktop} {
+            color: $white;
+          }
+        }
+
+          span {
+            border-color: $black;
+            border-width: 1px;
+
+            .path-not-front & {
+              color: $black;
+
+              @media #{$desktop} {
+                color: $white;
+              }
+            }
+          }
+        }
+        &.active {
+          span {
+            .path-not-front & {
+              border-color: $white;
+              border-width: 1px;
+            }
+          }
+          
+        }
+      }
     }
   }
 }
@@ -49,4 +128,32 @@
 }
 
 // Button for toggling the navbar when in its collapsed state
-.navbar-toggler {}
+.navbar-toggler {
+}
+
+@media #{$mobile-max} {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 4.6875rem .9375rem .9375rem;
+    width: 75%;
+    height: 100%;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  .navbar-collapse.collapsing {
+    right: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+    transition: right 500ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: right 500ms ease-in-out;
+  }
+}

@@ -3,3 +3,17 @@
  * - set element global styles, basically whenever this element appears
  *   it should look like this by default.
  ============================================================================ */
+// color is hardcode on the base theme so i override it here
+.horizontal-tabs a, 
+.ui-widget.ui-widget-content a, 
+.view-eva.view-members a {
+  color: $black;
+
+  &:hover, &:focus, &:active {
+    color: $black;
+  }
+}
+
+a {
+  @include linkColors($black);
+}

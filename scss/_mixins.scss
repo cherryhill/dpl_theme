@@ -257,3 +257,12 @@ $value in $theme-colors {
     clear: both;
   }
 }
+
+@mixin linkColors($color) {
+  color: $color;
+  &:active,
+  &:hover,
+  &:focus {
+    color: $color;
+  }
+}

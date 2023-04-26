@@ -20,8 +20,8 @@ settings:
   provider: system
   label_display: '0'
   use_site_logo: true
-  use_site_name: true
-  use_site_slogan: true
+  use_site_name: false
+  use_site_slogan: false
 visibility:
   node_has_implicit_parent:
     id: node_has_implicit_parent
@@ -47,3 +47,7 @@ visibility:
     mimetype: ''
     negate: false
     context_mapping: {  }
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

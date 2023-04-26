@@ -1,0 +1,9 @@
+.page__row--has-bg {
+  min-width: $site-width-full;
+  min-height: 90vh;
+  max-height: auto;
+  background-size: $site-bg-cover;
+  width: $site-width-full;
+  height: $site-height-100vh;
+  background-position: $site-bg-position-top;
+}
