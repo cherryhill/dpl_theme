@@ -1,6 +1,8 @@
 .view-grid {
+
   .node__details {
-    .node__title {
+    .node__title,
+    h2 {
       font-size: $base-font-size;
       text-decoration: underline;
 

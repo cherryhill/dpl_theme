@@ -2,3 +2,18 @@
  * @file
  * Styling for Views in Bartik.
  */
+.views-view-grid {
+  > .views-row {
+    display: grid;
+    gap: 65px;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media #{$tablet} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media #{$desktop} {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
