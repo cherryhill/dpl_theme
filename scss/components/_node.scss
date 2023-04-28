@@ -9,3 +9,61 @@
     text-align: center;
   }
 }
+
+.node--type-islandora-object {
+  &.node--view-mode-full {
+    .horizontal-tabs {
+      padding: 0;
+      border: 0 none;
+    }
+
+    .horizontal-tabs-list {
+      background: $black;
+
+      .horizontal-tab-button {
+        &.selected {
+          strong {
+            color: $white;
+            border: 0;
+            margin: 0;
+          }
+        }
+        a:hover {
+          background: $black;
+        }
+      }
+    }
+
+    .horizontal-tabs-panes {
+      .horizontal-tabs-pane {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+
+        .details-wrapper {
+          font-size: 1.25rem;
+          .field__label {
+            font-size: 1.25rem;
+          }
+
+          > .field,
+          #field-gemini-uri {
+            color: $black;
+            padding: .625rem 1rem;
+            border-bottom: 1px solid;
+
+            &:nth-child(even) {
+              background: $light-gray-300;
+            }
+
+            .form-group,
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

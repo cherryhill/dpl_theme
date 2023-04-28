@@ -68,7 +68,8 @@ Description: Bootstrap 4 with Sass
 //@import "./components/user";
 //@import "./components/vertical-tabs.component";
 //@import "./components/vertical-tabs";
-  @import "./components/views";
+@import "./components/views";
+  @import "./components/custom-grid";
 
 @import "./components/logo";
 @import "./components/header/header-region";

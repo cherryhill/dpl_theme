@@ -2,6 +2,7 @@
   position: relative;
   margin-top: -26px;
   margin-bottom: 0;
+  padding: 3.44rem 0;
 
   &:before {
     content: "";
@@ -17,10 +18,6 @@
 
   .view-solr-search-content {
     display: block;
-  }
-
-  .path-frontpage & {
-    margin-top: -26px;
   }
 
   .field {
@@ -44,8 +41,7 @@
   }
 
   .node__content {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
 
     h1,
     .node__title {
@@ -53,12 +49,14 @@
       font-size: $h5-font-size;
       color: $white;
       font-weight: normal;
-      margin-top: .7rem;
+      margin-top: 1.8rem;
       text-align: center;
       
       a {
         color: $white;
         font-weight: normal;
+        border: 0 none;
+        text-decoration: none;
       }
     }
 
@@ -73,22 +71,11 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 4rem;
     justify-items: center;
-    // if the is only 2 items align the container to the center in grid 5 column
 
-    
-
-    
     .image__wrapper {
       background: none;
       min-height: none;
       padding: 0;
-
-      img {
-        box-shadow: none;
-        border: 0 none;
-        padding: 0;
-        max-width: initial
-      }
     }
   }
 
@@ -104,8 +91,6 @@
 
   /** code for paragraphs **/
   .collection--grid {
-    padding: 3.44rem 0;
-
     .collection-item {
       max-width: 17.1875rem;
     }
