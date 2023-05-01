@@ -110,6 +110,10 @@
             grid-template-columns: 1fr 2.5fr;
             grid-column-gap: 1em;
           }
+
+          a {
+            word-break: break-word;
+          }
         }
       }
       &:last-child {
@@ -118,3 +122,4 @@
     }
   }
 }
+
