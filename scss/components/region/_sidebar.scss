@@ -1,0 +1,23 @@
+.sidebar {
+  aside {
+    background: $light-gray-300;
+    padding: 2rem;
+
+    > .block {
+      border-bottom: 1px solid;
+      padding-bottom: 2rem;
+
+      &:first-child {
+        margin-top: 0;
+        border-top: 0 none;
+        padding-top: 0;
+      }
+    }
+
+    .block {
+      a {
+        font-weight: normal;  
+      }
+    }
+  }
+}

@@ -64,6 +64,57 @@
         }
       }
     }
+  }
 
+  // field group html
+  .detail-section {
+    .detail-section-sub {
+      > h2 {
+        background: $black;
+        color: $white;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0;
+      }
+
+      > .field {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid;
+        margin-bottom: 0;
+        @media #{$tablet} {
+          display: grid;
+          grid-template-columns: 1fr 2.5fr;
+          grid-column-gap: 1em;
+        }
+
+        &:nth-child(odd) {
+          background: $light-gray-300;
+        }
+
+        .field__label {
+          font-size: 1.25rem;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      #field-gemini-uri {
+        .js-form-item {
+          padding: 0.8rem 1rem;
+          border-bottom: 1px solid;
+          margin-bottom: 0;
+
+          @media #{$tablet} {
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            grid-column-gap: 1em;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: 10px solid $black;
+      }
+    }
   }
 }
