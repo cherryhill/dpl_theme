@@ -50,3 +50,10 @@ function dpl_theme_preprocess_block(&$variables) {
   // set is front page variable
   $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
 }
+
+/**
+ * Implements hook_preprocess_view_view().
+ */
+function dpl_theme_preprocess_views_view(&$variables) {
+  $variable['additional_classes'] = ['view-grid'];
+}

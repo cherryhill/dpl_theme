@@ -1,6 +1,8 @@
 .view-grid {
+
   .node__details {
-    .node__title {
+    .node__title,
+    h2 {
       font-size: $base-font-size;
       text-decoration: underline;
 
@@ -27,10 +29,10 @@
         box-shadow: none;
         border: 0 none;
         padding: 0;
+        width: auto;
 
         @media #{$tablet} {
           max-width: 100%;
-          width: auto;
         }
       }
     }

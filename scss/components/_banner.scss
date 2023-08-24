@@ -1,0 +1,18 @@
+.full-banner {
+  .image__wrapper {
+    margin-left: -10px;
+    width: calc(100% + 20px);
+
+    @media #{$tablet} {
+      margin-left: -30px;
+      width: calc(100% + 60px);
+    }
+
+    img {
+      box-shadow: none;
+      border: 0 none;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

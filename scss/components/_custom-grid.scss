@@ -1,0 +1,20 @@
+.custom-grid .view-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+
+  .views-row {
+    flex: 0 0 100%;
+
+    @media #{tablet} {
+      flex: 0 0 33.3333%;
+    }
+
+    @media #{$desktop} {
+      flex: 0 0 20%;
+    }
+  }
+}

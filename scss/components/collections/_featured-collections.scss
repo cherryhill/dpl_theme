@@ -1,19 +1,36 @@
 .featured-collections {
   position: relative;
-  margin-top: 0;
+  margin-top: -26px;
+  margin-bottom: 0;
+  padding: 3.44rem 0;
 
   &:before {
     content: "";
     background: $text-color;
-    width: calc(100% + 60px);
+    width: calc(100% + 20px);
     height: 100%;
     position: absolute;
-    left: -30px;
+    left: -10px;
     top: 0;
     bottom: 0;
-    right: -30px;
+    right: -10px;
+
+    @media #{$tablet} {
+      width: calc(100% + 60px);
+      left: -30px;
+      right: -30px;
+    }
   }
 
+  .view-solr-search-content {
+    display: block;
+  }
+
+  .field {
+    margin: 0;
+  }
+  
+  /** code for views **/
   .node {
     background: none;
   }
@@ -30,40 +47,41 @@
   }
 
   .node__content {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
 
-    h1 {
+    h1,
+    .node__title {
       font-family: $font-family-book;
       font-size: $h5-font-size;
       color: $white;
       font-weight: normal;
+      margin-top: 1.8rem;
+      text-align: center;
+      
+      a {
+        color: $white;
+        font-weight: normal;
+        border: 0 none;
+        text-decoration: none;
+      }
     }
 
     .field__item {
       flex-shrink: initial;
     }
   }
-
-  .search-results__content {
+  
+  .search-results__content,
+  .collection--grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 4rem;
+    justify-items: center;
 
     .image__wrapper {
       background: none;
       min-height: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 0;
-
-      img {
-        box-shadow: none;
-        border: 0 none;
-        padding: 0;
-        max-width: initial
-      }
     }
   }
 
@@ -71,7 +89,42 @@
     display: none;
   }
 
-  .view-home-page-featured-collections {
+  .view-home-page-featured-collections,
+  .content {
     position: relative;
+  }
+  /** end code for views **/
+
+  /** code for paragraphs **/
+  .collection--grid {
+    .collection-item {
+      max-width: 17.1875rem;
+    }
+
+    h2 {
+      line-height: 1.08;
+      margin-bottom: 0;
+      margin-top: .7rem;
+      text-align: center;
+
+      a {
+        color: $white;
+        font-family: $font-family-book;
+        font-size: $h5-font-size;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+    }
+
+    .image__wrapper {
+      display: block;
+
+      img {
+        width: 275px;
+        height: 190px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
   }
 }

@@ -5,3 +5,8 @@
 // Set styles for Drupal core data-align classes. These are applied using
 // the CKEditor (wysiwyg). When captions are used images are wrapped in
 // a figure element.
+img {
+  padding: 0;
+  border: 0 none;
+  box-shadow: none;
+}
