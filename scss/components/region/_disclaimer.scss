@@ -1,43 +1,40 @@
 .site-disclaimer {
-  color: $page-footer-disclaimer-color;
-  background-color: $page-footer-disclaimer-background-color;
-  font-size: $base-font-size;
-  padding: 0 1rem;
-
-  .region-footer-disclaimer {
-    justify-content: space-between;
-    flex-direction: column;
-
-    @media #{$tablet} {
-      flex-direction: row;
+    color: $page-footer-disclaimer-color;
+    background-color: $page-footer-disclaimer-background-color;
+    font-size: $base-font-size;
+    padding: 0 1rem;
+    .region-footer-disclaimer {
+        justify-content: space-between;
+        flex-direction: column;
+        @media #{$tablet} {
+            flex-direction: row;
+        }
     }
-  }
-
-  .field--name-body {
-    margin-bottom: 0;
-  }
-
-  p {
-    &:last-child {
-      margin-bottom: 0;
+    .field--name-body {
+        margin-bottom: 0;
     }
-  }
-
-  .navbar-nav {
-    flex-direction: row;
-
-    li {
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-
-      .nav-link {
-        color: $white;
-        font-weight: normal;
-        font-size: $base-font-size;
-        font-family: $font-family-base;
-        text-decoration: underline;
-      }
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
-  }
+    .navbar-nav {
+        flex-direction: row;
+        li {
+            // &:not(:last-child) {
+            margin-right: 1rem;
+            // }
+            .nav-link {
+                color: $white;
+                font-weight: normal;
+                font-size: $base-font-size;
+                font-family: $font-family-base;
+                text-decoration: underline;
+                padding: 0.5rem 0.25rem !important;
+            }
+        }
+    }
+    .copyright {
+        padding-left: 0.7rem;
+    }
 }

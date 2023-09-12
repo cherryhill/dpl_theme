@@ -2,124 +2,132 @@
  * @file
  * Visual styles for Bootstrap Barrio's node component.
  */
-.node__content {
-  font-size: $font-size-base;
 
-  h1 {
-    text-align: center;
-  }
+.node__content {
+    font-size: $font-size-base;
+    h1 {
+        text-align: center;
+    }
+    span.a2a_kit {
+        display: none;
+    }
+    article & {
+        a {
+            border-bottom: 0;
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+                text-underline-offset: 0.2rem;
+            }
+        }
+    }
+}
+
+article.node--type-page {
+    padding: 0.5em 1rem;
+    strong {
+        font-weight: unset;
+        color: $dark;
+    }
+    .user-logged-out & {
+        margin-top: -3rem;
+    }
 }
 
 .node--type-islandora-object {
-  &.node--view-mode-full {
-    .horizontal-tabs {
-      padding: 0;
-      border: 0 none;
-    }
-
-    .horizontal-tabs-list {
-      background: $black;
-
-      .horizontal-tab-button {
-        &.selected {
-          strong {
-            color: $white;
-            border: 0;
-            margin: 0;
-          }
+    &.node--view-mode-full {
+        .horizontal-tabs {
+            padding: 0;
+            border: 0 none;
         }
-        a:hover {
-          background: $black;
-        }
-      }
-    }
-
-    .horizontal-tabs-panes {
-      .horizontal-tabs-pane {
-        margin: 0;
-        padding: 0;
-        border: 0 none;
-
-        .details-wrapper {
-          font-size: 1.25rem;
-          .field__label {
-            font-size: 1.25rem;
-          }
-
-          > .field,
-          #field-gemini-uri {
-            color: $black;
-            padding: .625rem 1rem;
-            border-bottom: 1px solid;
-
-            &:nth-child(even) {
-              background: $light-gray-300;
+        .horizontal-tabs-list {
+            background: $black;
+            .horizontal-tab-button {
+                &.selected {
+                    strong {
+                        color: $white;
+                        border: 0;
+                        margin: 0;
+                    }
+                }
+                a:hover {
+                    background: $black;
+                }
             }
-
-            .form-group,
-            p {
-              margin: 0;
+        }
+        .horizontal-tabs-panes {
+            .horizontal-tabs-pane {
+                margin: 0;
+                padding: 0;
+                border: 0 none;
+                .details-wrapper {
+                    font-size: 1.25rem;
+                    .field__label {
+                        font-size: 1.25rem;
+                    }
+                    >.field,
+                    #field-gemini-uri {
+                        color: $black;
+                        padding: .625rem 1rem;
+                        border-bottom: 1px solid;
+                        &:nth-child(even) {
+                            background: $light-gray-300;
+                        }
+                        .form-group,
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
-
-  // field group html
-  .detail-section {
-    .detail-section-sub {
-      > h2 {
-        background: $black;
-        color: $white;
-        padding: 0.5rem 1rem;
-        margin-bottom: 0;
-      }
-
-      > .field {
-        padding: 0.8rem 1rem;
-        border-bottom: 1px solid;
-        margin-bottom: 0;
-        @media #{$tablet} {
-          display: grid;
-          grid-template-columns: 1fr 2.5fr;
-          grid-column-gap: 1em;
+    // field group html
+    .detail-section {
+        .detail-section-sub {
+            >h2 {
+                background: $black;
+                color: $white;
+                padding: 0.5rem 1rem;
+                margin-bottom: 0;
+            }
+            >.field {
+                padding: 0.8rem 1rem;
+                border-bottom: 1px solid;
+                margin-bottom: 0;
+                @media #{$tablet} {
+                    display: grid;
+                    grid-template-columns: 1fr 2.5fr;
+                    grid-column-gap: 1em;
+                }
+                &:nth-child(odd) {
+                    background: $light-gray-300;
+                }
+                .field__label {
+                    font-size: 1.25rem;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            #field-gemini-uri {
+                .js-form-item {
+                    padding: 0.8rem 1rem;
+                    border-bottom: 1px solid;
+                    margin-bottom: 0;
+                    @media #{$tablet} {
+                        display: grid;
+                        grid-template-columns: 1fr 2.5fr;
+                        grid-column-gap: 1em;
+                    }
+                    a {
+                        word-break: break-word;
+                    }
+                }
+            }
+            &:last-child {
+                border-bottom: 10px solid $black;
+            }
         }
-
-        &:nth-child(odd) {
-          background: $light-gray-300;
-        }
-
-        .field__label {
-          font-size: 1.25rem;
-        }
-
-        p {
-          margin-bottom: 0;
-        }
-      }
-
-      #field-gemini-uri {
-        .js-form-item {
-          padding: 0.8rem 1rem;
-          border-bottom: 1px solid;
-          margin-bottom: 0;
-
-          @media #{$tablet} {
-            display: grid;
-            grid-template-columns: 1fr 2.5fr;
-            grid-column-gap: 1em;
-          }
-
-          a {
-            word-break: break-word;
-          }
-        }
-      }
-      &:last-child {
-        border-bottom: 10px solid $black;
-      }
     }
-  }
 }
-

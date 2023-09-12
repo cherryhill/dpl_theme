@@ -6,112 +6,112 @@
 // Override Bootstrap defaults
 .container,
 .col {
-  padding-left: $global-padding;
-  padding-right: $global-padding;
+    padding-left: $global-padding;
+    padding-right: $global-padding;
 }
 
 .row {
-  margin-left: -$global-padding;
-  margin-right: -$global-padding;
+    margin-left: -$global-padding;
+    margin-right: -$global-padding;
 }
-
 
 // Block defaults
 .block {
-  margin: $global-padding 0;
-
-  @media #{$tablet} {
-    margin: $x-large 0;
-  }
+    margin: $global-padding 0;
+    @media #{$tablet} {
+        margin: $x-large 0;
+    }
 }
 
 div.container-fluid,
 .dpl-navbar {
-  padding-left: $global-padding;
-  padding-right: $global-padding;
-  align-items: flex-start;
-
-  @media #{$tablet} {
-    padding-left: $global-gutter-container;
-    padding-right: $global-gutter-container;
-  }
+    padding-left: $global-padding;
+    padding-right: $global-padding;
+    align-items: flex-start;
+    @media #{$tablet} {
+        padding-left: $global-gutter-container;
+        padding-right: $global-gutter-container;
+    }
 }
 
 // Regions wrapper.
 .regions {
-  border: $global-padding solid;
-  border-bottom: 0;
+    border: $global-padding solid;
+    border-bottom: 0;
 }
-
 
 // Footer
 .site-footer {
-  &__top.clearfix {
-    border: 0;
-    padding: $x-large $global-padding;
-    display: block;
-
-    @media #{$wide} {
-      display: flex;
-    }
-  }
-
-  .region-footer {
-    &-first {
-      .block {
-        margin-bottom: $x-large;
-
-        &:last-of-type {
-          margin-bottom: $x-large;
-
-          .block__inner {
-            padding-bottom: 0;
-          }
-        }
-
-        .field {
-          margin-bottom: 0;
-        }
-
+    &__top.clearfix {
+        border: 0;
+        padding: $x-large $global-padding;
+        display: block;
         @media #{$wide} {
-          margin-top: 0;
+            display: flex;
         }
-      }
     }
-    &-second {
-      .menu {
-        column-count: 2;
-      }
-    }
-
-    @media #{$tablet} {
-      &-first {
-        .block__inner,
-        .content {
-          margin-right: $xx-large;
-          padding-right: $x-large;
+    .region-footer {
+        &-first {
+            .block {
+                margin-bottom: $x-large;
+                &:last-of-type {
+                    margin-bottom: $x-large;
+                    .block__inner {
+                        padding-bottom: 0;
+                    }
+                }
+                .field {
+                    margin-bottom: 0;
+                }
+                @media #{$wide} {
+                    margin-top: 0;
+                }
+            }
         }
-      }
+        &-second {
+            .menu {
+                column-count: 2;
+            }
+        }
+        @media #{$tablet} {
+            &-first {
+                .block__inner,
+                .content {
+                    margin-right: $xx-large;
+                    padding-right: $x-large;
+                }
+            }
+        }
     }
-  }
 }
 
 .region-footer-fifth {
-  padding: $global-padding;
-
-  @media #{$tablet} {
-    padding: $global-padding 0;
-  }
+    padding: $global-padding;
+    @media #{$tablet} {
+        padding: $global-padding 0;
+    }
 }
 
-/** hiding frontpage title and margins **/
-.path-frontpage {
-  .block-system-main-block,
-  .main-content {
-    margin: 0;
-  }
 
-  .node__title {
-    display: none;
-  }
+/** set container height if content less **/
+
+.path-not-front {
+    .layout-main-wrapper {
+        position: relative;
+        min-height: calc(100vh - 100px);
+        height: auto;
+    }
+}
+
+
+/** hiding frontpage title and margins **/
+
+.path-frontpage {
+    .block-system-main-block,
+    .main-content {
+        margin: 0;
+    }
+    .node__title {
+        display: none;
+    }
 }
